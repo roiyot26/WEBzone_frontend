@@ -1,0 +1,33 @@
+.wap-hero-4 {
+    &.media-800 {
+        display: flex;
+        flex-direction: column;
+        .wap-hero-4-txt {
+            font-size: 45px !important;
+        }
+    }
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    & > span {
+        margin: auto;
+        &:first-of-type p {
+            padding: 60px;
+        }
+
+        &:last-of-type {
+            & div {
+                margin-top: 2rem;
+                span {
+                    margin-top: 1rem;
+                }
+            }
+
+            .wap-hero-4-btn {
+                padding: 15px 25px;
+            }
+        }
+    }
+}

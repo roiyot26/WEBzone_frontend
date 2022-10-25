@@ -1,0 +1,8 @@
+.screen {
+    position: fixed;
+    inset: 0;
+    background-color: #0000009d;
+    backdrop-filter: blur(3px);
+    cursor: pointer;
+    z-index: 3;
+}

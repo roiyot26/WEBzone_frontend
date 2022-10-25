@@ -1,0 +1,22 @@
+.wap-hero-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    .hero-content {
+        p {
+            margin-bottom: 40px;
+        }
+        a {
+            display: block;
+            width: fit-content;
+            margin: 100px auto 0;
+            padding: 15px 30px;
+        }
+    }
+}

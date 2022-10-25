@@ -1,0 +1,30 @@
+.app-footer {
+    padding: 30px;
+    height: 310px;
+    align-items: end;
+
+    .footer-container{
+        gap: 20px;
+
+        @include for-mobile-layout{
+            align-items: start;
+            img{
+                width:165px;
+            }
+        }
+        
+        .content{
+            align-items: start;
+            gap: 10px;
+
+            p span{
+                font-weight: bold;
+                font-family: 'QanelasSoft';
+            }
+            small {
+                font-family: 'QanelasSoft';
+            }
+        }
+    }
+
+}

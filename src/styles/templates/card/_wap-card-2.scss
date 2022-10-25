@@ -1,0 +1,21 @@
+.wap-card-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+
+
+    div {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &.media-1000{
+        flex-direction: column;
+
+        img{
+            width: 100% !important;
+        }
+    }
+}

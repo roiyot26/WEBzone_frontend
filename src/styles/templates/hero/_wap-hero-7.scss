@@ -1,0 +1,29 @@
+.wap-hero-7 {
+    &.media-600 {
+        .btn-container {
+            flex-direction: column;
+            align-items: center;
+            gap: 35px;
+        }
+    }
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: calc(780px - 218px);
+
+    & > span {
+        flex: 1;
+    }
+
+    .btn-container {
+        justify-content: center;
+        & > * {
+            & > * {
+                padding: 5px 5px;
+                border: 3px solid white;
+                margin: 1rem;
+            }
+        }
+    }
+}

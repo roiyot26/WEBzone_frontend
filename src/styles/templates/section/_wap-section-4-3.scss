@@ -1,0 +1,41 @@
+.wap-section-4 {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.wap-section-4-3-container {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &.media-800 {
+        .section-4-3-content {
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+
+    .section-4-3-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        // background-size: cover;
+
+        .card-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+            width: 150px;
+
+            .icon {
+                display: grid;
+                width: 30px;
+                margin: auto;
+            }
+        }
+    }
+}

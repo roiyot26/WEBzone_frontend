@@ -1,0 +1,11 @@
+.wap-footer-1 {
+    background-color: rgb(29, 55, 90);
+
+    & > span {
+        & > div {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+    }
+}

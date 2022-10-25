@@ -1,0 +1,19 @@
+.wap-footer-2 { 
+
+    & > span > div {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 0;
+        max-width: 1500px;
+        margin: auto;
+        flex-wrap: wrap;
+
+        p {
+            margin: 10px 0;
+        }
+    }
+
+    & > span > p {
+        margin-top: 60px;
+    }
+}

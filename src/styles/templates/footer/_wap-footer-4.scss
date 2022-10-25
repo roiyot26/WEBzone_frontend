@@ -1,0 +1,62 @@
+.wap-footer-4 {
+    &.media-800 {
+        & > span > div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 0;
+            max-width: 1500px;
+            margin: auto;
+
+            p {
+                margin: 10px 0;
+            }
+        }
+
+        .input-container {
+            align-items: center;
+            span {
+                text-align: center;
+            }
+            input {
+                margin-left: unset;
+            }
+        }
+    }
+
+    & > span > div {
+        display: flex;
+        justify-content: space-evenly;
+        padding-top: 0;
+        max-width: 1500px;
+        margin: auto;
+
+        p {
+            margin: 10px 0;
+        }
+    }
+
+    & > span > p {
+        margin-top: 60px;
+    }
+
+    .input-container {
+        gap: 8px;
+        label {
+            color: #ffffff;
+        }
+
+        input {
+            border-radius: 5px;
+            height: 30px;
+            padding: 3px;
+        }
+
+        input[type="text"] {
+            margin-left: 20px;
+        }
+        input[type="email"] {
+            margin-left: 55px;
+        }
+    }
+}

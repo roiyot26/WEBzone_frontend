@@ -1,0 +1,22 @@
+.save-loader-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+
+    position: fixed;
+    top: 40vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+
+    svg {
+        position: static !important;
+    }
+
+    h1 {
+        font-size: 40px;
+        color: #ffffff;
+        text-shadow: 0px 3px 0px black;
+        text-align: center;
+    }
+}

@@ -1,0 +1,34 @@
+.wap-txt-8{
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+
+   .layout-container{
+      max-width: 90%;
+      margin: auto;
+      align-items: center;
+      gap: 15px;
+      
+      .txt-container{
+         gap: 15px;
+      }
+      
+      .partners-container{
+         justify-content: center;
+         align-items: center;
+         flex-wrap: wrap;
+         gap: 35px;
+
+         img{
+            filter: brightness(200);
+            height: 60px;
+         }
+      }
+      
+      a{
+         padding: 14px 26px;
+         margin: 30px auto;
+      }
+   }
+
+}

@@ -1,0 +1,29 @@
+.wap-header-1 {
+    &.media-800 {
+        .wap-1-hamburger {
+            display: block;
+        }
+
+        .nav-link {
+            display: none;
+        }
+    }
+
+    .wap-1-hamburger {
+        display: none;
+    }
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & > :first-child {
+        gap: 1rem;
+        padding: 10px 5px;
+    }
+
+    & > :nth-child(2) div {
+        display: flex;
+        gap: 1rem;
+    }
+}

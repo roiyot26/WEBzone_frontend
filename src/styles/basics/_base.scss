@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    // this is the default value below
+    --toastify-color-progress-light: linear-gradient(to right, #007aff, #007aff) !important;
+}
+
+html {
+    font-size: 16px;
+    font-family: $main-font;
+    color: black;
+}
+
+body {
+    background-color: $color1;
+    margin: 0;
+}
+
+main{
+    flex: 1;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+button,
+input {
+    font-family: $main-font;
+}
+
+input[type="text"],
+input[type="password"] {
+    outline: none;
+    border: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+    cursor: default;
+}
+
+::-webkit-scrollbar-track {
+    background: lightgray;
+    border-radius: 10px;
+    margin-block: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #b4b4b4;
+    border-radius: 10px;
+    border: 3px solid lightgray;
+
+    transition: 200ms;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #a0a0a0;
+}

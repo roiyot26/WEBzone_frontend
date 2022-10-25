@@ -1,0 +1,205 @@
+.main-header {
+    height: $header-height;
+    padding: 0 7%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 3;
+    font-weight: 500;
+    transition: all 0.5s;
+
+    @include for-tablet-layout {
+        padding: 0 7%;
+        height: $header-tablet-height;
+    }
+
+    &.active-scroll-1 {
+        background-color: rgba(255, 255, 255, 0.75);
+        backdrop-filter: blur(6px);
+    }
+
+    &.active-scroll-2 {
+        background-color: rgba(255, 255, 255, 0.91);
+        backdrop-filter: blur(8px);
+    }
+
+    .logo {
+        img {
+            display: block;
+        }
+    }
+
+    .nav-menu {
+        gap: 3rem;
+        font-size: 0.9rem;
+        .nav-link {
+            transition: opacity 0.2s, color 0.2s;
+
+            &:hover {
+                opacity: 0.6;
+            }
+
+            &.active {
+                color: $color2;
+                font-weight: 700;
+            }
+        }
+    }
+
+    .btn-login {
+        padding: 8px 12px;
+        border-block-end: 1px solid $color2;
+        gap: 8px;
+        font-size: 1rem;
+        font-family: $main-font;
+        font-weight: 500;
+        transition: all 0.3s;
+
+        &:hover {
+            background-color: $color2;
+            color: $color1;
+        }
+
+        svg {
+            font-size: 20px;
+        }
+    }
+
+    .greet-user {
+        gap: 10px;
+
+        .user-icon-container {
+            padding: 10px;
+            border-radius: 50%;
+            background-color: lightgray;
+            cursor: pointer;
+
+            transition: all 0.3s;
+
+            &:hover {
+                filter: brightness(1.3);
+            }
+        }
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+
+    @include for-tablet-layout {
+        //Unset desktop
+        & > .btn-login,
+        & > .greet-user {
+            display: none;
+        }
+
+        .nav-menu {
+            display: none;
+        }
+
+        .logo {
+            img {
+                width: 110px;
+            }
+        }
+
+        //Mobile menu style
+        .mobile-menu {
+            display: block;
+            align-items: center;
+
+            .hamburger-btn {
+                cursor: pointer;
+                width: 27px;
+                height: 27px;
+            }
+
+            nav {
+                width: 100vw;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-color: $color2;
+                color: $color1;
+                direction: rtl;
+                transform: translateY(0%);
+                transition: all 0.2s;
+                z-index: 3;
+
+                &.close {
+                    transform: translateY(-100%);
+                }
+
+                & > * {
+                    padding: 25px 15px;
+                    font-weight: 400;
+                    text-align: center;
+                    border-block-start: 1px solid rgba(172, 172, 172, 0.37);
+
+                    &:active:not(.top-bar),
+                    &.active {
+                        background-color: #334b6c;
+                    }
+                }
+
+                .top-bar {
+                    display: flex;
+                    align-items: center;
+                    padding: 0 7% 0 5%;
+                    height: 70px;
+                    justify-content: space-between;
+
+                    .btn-login {
+                        color: $color1;
+                    }
+                }
+            }
+        }
+    }
+
+    @include for-mobile-layout {
+        &.in-editor {
+            padding: 5px 7% 0 10px;
+            direction: rtl;
+            background-color: $color1 ;
+
+            & > .logo,
+            & > .btn-login {
+                display: none;
+            }
+        }
+    }
+
+    //Save-Publish on mobile
+    & > .save-publish-container {
+        display: none;
+
+        @include for-mobile-layout {
+            display: flex;
+
+            .media-btns,
+            .work-together-btn {
+                display: none;
+            }
+        }
+    }
+}
+
+.placeholder {
+    height: $header-height;
+
+    @include for-tablet-layout {
+        height: $header-tablet-height;
+    }
+}
+
+// In PublishPage :
+.main-header.hidden,
+.placeholder.hidden {
+    display: none;
+
+    &.active-scroll-1,
+    &.active-scroll-2 {
+        display: none;
+    }
+}

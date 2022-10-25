@@ -1,0 +1,20 @@
+.wap-txt-8-2{
+   min-height: 50vh;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+
+   .layout-container{
+      max-width: 90%;
+      margin: auto;
+      gap: 20px;
+
+      p{
+         max-width: 80ch;
+      }
+
+      .muted{
+         opacity: 0.6;
+      }
+   }
+}

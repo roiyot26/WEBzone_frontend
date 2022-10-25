@@ -1,0 +1,22 @@
+// Media queries Breakpoint mixins
+
+@mixin for-mobile-layout {
+    @media (max-width: $media-mobile) {
+        @content;
+    }
+}
+
+@mixin for-tablet-layout {
+    @media (max-width: $media-tablet) {
+        @content;
+    }
+}
+
+// Mixin for removing hover effects on iphone screen
+@mixin hover-supported {
+    @media not all and (pointer: coarse) {
+        &:hover {
+            @content;
+        }
+    }
+}

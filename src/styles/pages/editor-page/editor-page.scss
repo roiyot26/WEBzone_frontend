@@ -1,0 +1,38 @@
+.editor-page {
+   display: grid;
+   grid-template-columns: $sidebar-width 1fr;
+   overflow: auto;
+   max-height: calc(100vh - $header-height);
+
+   @include for-tablet-layout {
+      grid-template-columns: $sidebar-tablet-width 1fr;
+      max-height: calc(100vh - $header-tablet-height);
+   }
+
+   @include for-mobile-layout {
+      grid-template-columns: 1fr;
+   }
+
+   //Garbage
+   &.drag-active {
+      .garbage {
+         opacity: 1;
+         right: 34px;
+      }
+   }
+   .garbage {
+      transition: all 0.2s;
+      grid-column: 2/3;
+      position: fixed;
+      right: -50px;
+      bottom: 20px;
+      background-color: rgb(218 55 55 / 86%);
+      font-size: 4rem;
+      width: 78px;
+      text-align: center;
+      border-radius: 50%;
+      z-index: 5000;
+      color: white;
+      opacity: 0;
+   }
+}

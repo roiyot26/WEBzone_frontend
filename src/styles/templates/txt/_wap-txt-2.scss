@@ -1,0 +1,21 @@
+.wap-txt-2 {
+
+    & > *:first-child p {
+        padding: 60px 0 20px;
+    }
+
+    & > *:last-child p {
+        padding-bottom: 40px;
+    }
+
+
+    &::after {
+        content: "";
+        display: block;
+        width: 90%;
+        height: 4px;
+        border-radius: 2px;
+        margin: auto;
+        background-image: linear-gradient(90deg, white, gray);
+    }
+}
