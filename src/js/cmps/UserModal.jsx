@@ -3,7 +3,7 @@ import { useState } from 'react';
 // Cmps
 import { Screen } from './Screen';
 
-// EXAMPLE FOR PROPS CAN BE FOUND BELOW THE JSX.
+// EXAMPLE FOR PROPS CAN BE FOUND BELOW THE JSX
 export function UserModal(props) {
     const { mainTxt, subTxt, btnTxtCancel, handleCbCancel, btnTxt_1, handleCb_1, btnTxt_2, handleCb_2,
         type, handleSubmitCb, btnSubmitTxt, inputType_1, inputName_1, inputPlaceholder_1 } = props
